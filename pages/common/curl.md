@@ -34,3 +34,7 @@
 - Pass client certificate and key for a resource, skipping certificate validation:
 
 `curl --cert {{client.pem}} --key {{key.pem}} --insecure {{https://example.com}}`
+
+- Print only the response headers to stdout, excluding the body and progress bar:
+
+`curl -sD - -o /dev/null {{https://example.com}}`
